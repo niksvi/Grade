@@ -1,0 +1,274 @@
+.page-footer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 19.7%;
+  margin-top: 142px;
+
+  @media (max-width: $desktop-width) {
+    margin-left: 2.7%;
+    margin-top: 62px;
+  }
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    margin-top: 44px;
+  }
+}
+
+.page-footer__travels {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 189px;
+    background-color: $grey;
+    right: -35px;
+    top: 21px;
+  }
+
+  @media (max-width: $desktop-width) {
+    &::after {
+      right: -51px;
+      top: 18px;
+      height: 178px;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 90%;
+      height: 1px;
+      background-color: $grey;
+      left: 5%;
+      top: 368px;
+    }
+  }
+}
+
+.page-footer__title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  color: $dark;
+
+  @media (max-width: $tablet-width) {
+    text-align: center;
+  }
+}
+
+.page-footer__list {
+  @include list-reset;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 34px;
+
+  @media (max-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 8%;
+  }
+}
+
+.page-footer__item {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+
+  &--first {
+    grid-column: 1/2;
+  }
+
+  &--second {
+    grid-column: 2/3;
+  }
+
+  &--third {
+    grid-column: 3/-1;
+
+    @media (max-width: $tablet-width) {
+      grid-column: 1/-1;
+      margin-top: -4px;
+      grid-row: 2/-1;
+    }
+  }
+
+  @media (max-width: $desktop-width) {
+    margin-right: -2px;
+  }
+}
+
+.page-footer__city {
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(20, 21, 23, 0.5);
+  margin-bottom: 10px;
+
+  &:hover,
+  &:focus {
+    color: $base;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  @media (max-width: $desktop-width) {
+    margin-bottom: 12px;
+  }
+}
+
+.page-footer__contacts {
+  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 189px;
+    background-color: $grey;
+    right: -75px;
+    top: 16px;
+  }
+
+  @media (max-width: $desktop-width) {
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-left: 0;
+    margin-bottom: 30px;
+    margin-top: 10px;
+
+    &::after {
+      display: inline;
+      content: "";
+      position: absolute;
+      width: 90%;
+      height: 1px;
+      background-color: $grey;
+      left: 5%;
+      top: 177px;
+    }
+  }
+}
+
+.page-footer .page-footer__link {
+  color: $base;
+  text-decoration: underline;
+  display: inline-block;
+
+  &--email {
+    font-size: 14px;
+    line-height: 17px;
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+
+  &:focus,
+  &:hover {
+    color: $black;
+  }
+
+  &:active {
+    color: $base-hover;
+  }
+
+  @media (max-width: $desktop-width) {
+    margin-top: 0;
+
+    &--email {
+      margin-top: -12px;
+      text-decoration: none;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    text-align: center;
+
+    &--phone {
+      margin-left: -5px;
+    }
+  }
+}
+
+.page-footer__email {
+  fill: $grey;
+  margin-right: 15px;
+  vertical-align: bottom;
+
+  @media (max-width: $desktop-width) {
+    margin-top: 20px;
+  }
+}
+
+.page-footer__phone {
+  fill: none;
+  stroke: $grey;
+  margin-right: 12px;
+  vertical-align: bottom;
+}
+
+.page-footer__corporative {
+  margin-left: 128px;
+
+  @media (max-width: $desktop-width) {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+    padding-top: 18px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 95%;
+      height: 1px;
+      background-color: $grey;
+      left: 0;
+      top: 4px;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-top: -6px;
+    margin-bottom: 20px;
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.page-footer__description {
+  font-size: 14px;
+  line-height: 24px;
+  color: $dark;
+  opacity: 0.5;
+  max-width: 320px;
+
+  @media (max-width: $desktop-width) {
+    margin-left: 0;
+    margin-right: 2.7%;
+    max-width: 100%;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-left: 2.5%;
+    margin-right: 3.5%;
+  }
+}

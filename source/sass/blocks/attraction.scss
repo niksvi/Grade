@@ -6,6 +6,22 @@
   background-position: 65% 70%;
   background-size: 37% 90%;
   background-repeat: no-repeat;
+
+  &--2 {
+    background-image: url("../../img/alban-review.jpg");
+  }
+
+  &--3 {
+    background-image: url("../../img/makedon-review.jpg");
+  }
+
+  &--4 {
+    background-image: url("../../img/montenegro-review.jpg");
+  }
+
+  &--5 {
+    background-image: url("../../img/horvat-review.jpg");
+  }
 }
 
 .attraction__title {

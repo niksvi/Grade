@@ -8,9 +8,8 @@
   display: flex;
 }
 
-.main-nav__item {
+.main-nav__link {
   color: $dark;
-  cursor: pointer;
 
   &:hover {
     color: $base;

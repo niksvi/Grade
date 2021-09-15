@@ -2,7 +2,17 @@
 $black: #2c2e3f;
 $dark: #141517;
 $white: #ffffff;
+$grey: #d7d9df;
 $base: #fe7865;
+$base-hover: #f17d4b;
+$bg-link: #fbf8f8;
+$link-main: #48494d;
 
 $tablet-width: 767px;
 $desktop-width: 1023px;
+
+@mixin list-reset {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}

@@ -1,7 +1,7 @@
 .review {
   position: absolute;
-  min-width: 30%;
-  max-height: 285px;
+  width: 300px;
+  height: max-content;
   background-color: $white;
   padding: 30px;
   right: 0;
