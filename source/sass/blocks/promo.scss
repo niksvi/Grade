@@ -1,0 +1,84 @@
+.promo {
+  background-image: url("../../img/promo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 860px;
+  position: relative;
+
+  @media (max-width: $desktop-width) {
+    min-height: 344px;
+  }
+
+  @media (max-width: $tablet-width) {
+    min-height: max-content;
+    max-height: 235px;
+  }
+}
+
+.promo__title.title {
+  margin: 0 auto;
+  margin-bottom: 90px;
+  color: $white;
+
+  @media (max-width: $tablet-width) {
+    width: 300px;
+    margin-bottom: 110px;
+  }
+}
+
+.promo__info {
+  position: absolute;
+  left: 56%;
+  top: 185px;
+  max-width: 412px;
+
+  @media (max-width: $desktop-width) {
+    position: relative;
+    left: auto;
+    top: auto;
+    max-width: 100%;
+    text-align: center;
+    padding-top: 60px;
+  }
+}
+
+.promo__description {
+  color: $white;
+
+  @media (max-width: $desktop-width) {
+    max-width: 398px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: $tablet-width) {
+    color: $black;
+  }
+}
+
+.promo__button {
+  width: 340px;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 31px;
+    right: 40px;
+    background-image: url("../../img/arrow-down.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (max-width: $desktop-width) {
+      top: 18px;
+    }
+  }
+
+  @media (max-width: $desktop-width) {
+    width: 250px;
+    margin: 0 auto;
+    line-height: 10px;
+    padding-left: 0;
+  }
+}

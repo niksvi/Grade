@@ -1,0 +1,45 @@
+.main-nav--closed {
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.main-nav__list {
+  display: flex;
+}
+
+.main-nav__item {
+  color: $dark;
+  cursor: pointer;
+
+  &:hover {
+    color: $base;
+  }
+
+  &--menu {
+    font-weight: 500;
+  }
+}
+
+.main-nav__tel {
+  color: $dark;
+  text-decoration: underline;
+  position: relative;
+
+  &:hover {
+    color: $base;
+  }
+
+  &::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: -36px;
+    background-image: url("../../img/phone.svg");
+  }
+}
+
+.main-nav__item:nth-child(2) {
+  margin: 0 70px 0 40px;
+}

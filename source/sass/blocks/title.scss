@@ -1,0 +1,11 @@
+.title {
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 80px;
+  color: $black;
+
+  @media (max-width: $desktop-width) {
+    font-size: 30px;
+    line-height: 45px;
+  }
+}

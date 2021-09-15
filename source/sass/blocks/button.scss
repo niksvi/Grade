@@ -1,0 +1,27 @@
+.button {
+  color: $white;
+  font-weight: 700;
+  font-size: 12px;
+  display: block;
+  height: 75px;
+  background-color: $base;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-left: 40px;
+  line-height: 75px;
+  box-sizing: border-box;
+
+  @media (max-width: $desktop-width) {
+    height: 50px;
+    line-height: 50px;
+    padding-left: 0;
+    padding-right: 70px;
+    font-size: 10px;
+    font-weight: 500;
+    display: inline-block;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 288px;
+  }
+}
